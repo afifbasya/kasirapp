@@ -1,10 +1,11 @@
 import React from "react";
-import {Nav, Navbar, NavDropdown, Form, Button, FormControl } from 'react-bootstrap'
+import {Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar variant="dark" expand="lg">
+      <Container>
+      <Navbar.Brand href="#home"><strong>Kasir</strong> App</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -22,11 +23,8 @@ const NavbarComponent = () => {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };
