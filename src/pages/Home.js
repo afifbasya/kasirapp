@@ -132,12 +132,12 @@ export default class Home extends Component {
                 changeCategory={this.changeCategory}
                 categoriYangDipilih={categoriYangDipilih}
               />
-              <Col>
+              <Col className="mt-3">
                 <h4>
                   <strong>Daftar Produk</strong>
                 </h4>
                 <hr />
-                <Row>
+                <Row className="overflow-auto menu">
                   {menus &&
                     menus.map((menu) => (
                       <Menus
